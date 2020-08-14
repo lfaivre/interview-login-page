@@ -1,6 +1,6 @@
 .footer-content-container {
   width: 100%;
   height: 20rem;
-  background-color: #000000;
+  background-color: var(--color-black);
   border-top: 0.0625rem solid rgba(243, 242, 241, 0.5);
 }

@@ -14,7 +14,7 @@
   /* @info Colors */
 
   --color-offwhite: #f3f2f1;
-  --color-offblack: #1e2223;
+  --color-black: #000000;
   --color-mintgreen: #cbffcb;
 
   /* @info Font Family */
@@ -34,7 +34,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 
-  background-color: #000000;
+  background-color: var(--color-black);
   color: var(--color-offwhite);
 }
 
