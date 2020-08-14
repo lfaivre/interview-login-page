@@ -1,6 +1,6 @@
 import React from 'react';
 
-import LoginForm from './LoginForm';
+import LoginForm from './components/LoginForm';
 import NavigationBar from './NavigationBar';
 
 import 'modern-css-reset';
