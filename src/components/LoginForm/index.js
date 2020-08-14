@@ -33,22 +33,22 @@ const LoginScreen = () => {
   return (
     <div className="login-form">
       <form onSubmit={handleSubmission}>
+        <label htmlFor="username">Username</label>
         <div className="text-input-container">
           <input
             type="text"
+            id="username"
             value={username}
             onChange={handleSetUsername}
             placeholder="hello@company.com"
           />
         </div>
+
+        <label htmlFor="password">Password</label>
         <div className="text-input-container">
-          <input
-            type="password"
-            value={password}
-            onChange={handleSetPassword}
-            placeholder="password"
-          />
+          <input type="password" id="password" value={password} onChange={handleSetPassword} />
         </div>
+
         <input type="submit" value="Submit" />
       </form>
     </div>

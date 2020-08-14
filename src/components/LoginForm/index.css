@@ -9,12 +9,29 @@ form {
   align-items: center;
 }
 
+label {
+  width: 25%;
+
+  padding: 0.5rem 0;
+
+  color: var(--color-mintgreen);
+
+  font-family: var(--font-family-paragraph);
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .text-input-container {
   width: 25%;
 
   padding: 0.5rem;
   border: 0.125rem solid var(--color-mintgreen);
   margin-bottom: 1rem;
+}
+
+.text-input-container:last-of-type {
+  margin-bottom: 1.5rem;
 }
 
 input[type='text'],
