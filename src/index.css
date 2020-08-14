@@ -27,6 +27,7 @@
 html {
   scroll-behavior: smooth;
   font-family: var(--font-family-default);
+  overflow-x: hidden;
 }
 
 body {

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './index.css';
 
 const LoginScreen = () => {
   const [username, setUsername] = useState('');
@@ -24,7 +25,7 @@ const LoginScreen = () => {
   };
 
   return (
-    <div className="outer-container">
+    <div className="login-form">
       <p>Log In to Your Account</p>
       <form onSubmit={handleSubmission}>
         <input type="text" value={username} onChange={handleSetUsername} placeholder="username" />
