@@ -3,7 +3,7 @@ import './index.css';
 import { navigationLinks } from '../../data/navigation';
 import profileImage from '../../assets/profile.jpeg';
 
-const NavigationBar = () => {
+const NavigationBar = ({ showAccountMenu }) => {
   return (
     <div className="navigation-bar">
       <div className="inner-container">
@@ -22,7 +22,7 @@ const NavigationBar = () => {
               );
             })}
           </ul>
-          <div className="account">
+          <div className="account" onClick={() => showAccountMenu(true)}>
             <div className="picture" style={{ backgroundImage: `url(${profileImage})` }}></div>
           </div>
         </div>

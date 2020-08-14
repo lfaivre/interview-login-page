@@ -8,9 +8,13 @@ import './index.css';
 import './App.css';
 
 function App() {
+  const showAccountMenu = (visible) => {
+    console.log(`Show account menu: ${visible}`);
+  };
+
   return (
     <div className="App app-outer-container">
-      <NavigationBar />
+      <NavigationBar showAccountMenu={showAccountMenu} />
       <LoginForm />
     </div>
   );
