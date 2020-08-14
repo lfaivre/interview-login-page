@@ -8,8 +8,12 @@ export const navigationLinks = [
     href: '/services',
   },
   {
-    text: 'Showcase',
-    href: '/showcase',
+    text: 'Testimonials',
+    href: '/testimonials',
+  },
+  {
+    text: 'Contact',
+    href: '/contact',
   },
   {
     text: 'Account',

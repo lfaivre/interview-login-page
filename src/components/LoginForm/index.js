@@ -35,13 +35,7 @@ const LoginScreen = () => {
       <form onSubmit={handleSubmission}>
         <label htmlFor="username">Username</label>
         <div className="text-input-container">
-          <input
-            type="text"
-            id="username"
-            value={username}
-            onChange={handleSetUsername}
-            placeholder="hello@company.com"
-          />
+          <input type="text" id="username" value={username} onChange={handleSetUsername} />
         </div>
 
         <label htmlFor="password">Password</label>
@@ -50,6 +44,10 @@ const LoginScreen = () => {
         </div>
 
         <input type="submit" value="Submit" />
+
+        <a href="/account/help" className="help">
+          Account Help
+        </a>
       </form>
     </div>
   );

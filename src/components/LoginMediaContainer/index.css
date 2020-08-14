@@ -5,6 +5,7 @@
   padding: 2rem;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -14,4 +15,13 @@
 
 .art {
   width: 80%;
+}
+
+.description {
+  width: 85%;
+  font-family: var(--font-family-display);
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color-black);
+  margin-bottom: 6rem;
 }

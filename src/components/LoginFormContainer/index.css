@@ -13,6 +13,11 @@
 .title {
   font-family: var(--font-family-display);
   font-size: 2rem;
+  font-style: italic;
   color: var(--color-mintgreen);
   margin-bottom: 2rem;
+}
+
+.underline {
+  text-decoration: underline;
 }

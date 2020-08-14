@@ -9,7 +9,7 @@ const NavigationBar = ({ showAccountMenu }) => {
       <div className="inner-container">
         <div className="left">
           <a href="/" className="name">
-            Company.
+            fuudie<span className="alternate-color">.</span>
           </a>
         </div>
         <div className="right">
