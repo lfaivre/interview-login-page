@@ -1,6 +1,12 @@
 /* @info Import Google Fonts */
 
+/* @todo Condense requests into single request */
+
+/* @info Playfair Display */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,669;1,669&display=swap');
+
+/* @info Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
   /* @info Define CSS Variables */
@@ -9,11 +15,13 @@
 
   --color-offwhite: #f3f2f1;
   --color-offblack: #1e2223;
+  --color-mintgreen: #cbffcb;
 
   /* @info Font Family */
 
   --font-family-default: 'Playfair Display', serif;
   --font-family-display: 'Playfair Display', serif;
+  --font-family-paragraph: 'Roboto', sans-serif;
 }
 
 html {

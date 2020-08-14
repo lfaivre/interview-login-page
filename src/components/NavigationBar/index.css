@@ -1,12 +1,82 @@
 .navigation-bar {
   width: 100%;
-  height: 5rem;
-  padding: 1rem;
-  background-color: pink;
+  height: 6rem;
+  padding: 1rem 2rem;
+  background-color: #000000;
 }
 
 .inner-container {
   width: 100%;
   height: 100%;
-  background-color: green;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left,
+.right {
+  height: 100%;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.name {
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--color-offwhite);
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navigation-links {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.link {
+  margin-left: 1rem;
+}
+
+.link a {
+  font-size: 1rem;
+  font-family: var(--font-family-paragraph);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-offwhite);
+  transition: color 0.3s ease-in-out;
+}
+
+.link a:hover {
+  color: var(--color-mintgreen);
+}
+
+.account {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.25rem;
+  border: 0.125rem solid var(--color-mintgreen);
+  border-radius: 50%;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.account .picture {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
