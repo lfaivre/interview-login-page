@@ -3,13 +3,13 @@ import LoginForm from '../LoginForm';
 
 import './index.css';
 
-const LoginContainer = () => {
+const LoginFormContainer = () => {
   return (
-    <div className="login-container">
+    <div className="login-form-container">
       <p className="title">Let's get you logged in.</p>
       <LoginForm />
     </div>
   );
 };
 
-export default LoginContainer;
+export default LoginFormContainer;

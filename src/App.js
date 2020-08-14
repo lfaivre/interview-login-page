@@ -1,7 +1,9 @@
 import React from 'react';
 
-import LoginContainer from './components/LoginContainer';
 import NavigationBar from './components/NavigationBar';
+import PageContentContainer from './components/PageContentContainer';
+import LoginMediaContainer from './components/LoginMediaContainer';
+import LoginFormContainer from './components/LoginFormContainer';
 
 import 'modern-css-reset';
 import './index.css';
@@ -15,7 +17,10 @@ function App() {
   return (
     <div className="App app-outer-container">
       <NavigationBar showAccountMenu={showAccountMenu} />
-      <LoginContainer />
+      <PageContentContainer>
+        <LoginMediaContainer />
+        <LoginFormContainer />
+      </PageContentContainer>
     </div>
   );
 }
