@@ -31,6 +31,7 @@
 }
 
 .name {
+  font-family: var(--font-family-display);
   font-size: 2rem;
   text-decoration: none;
   color: var(--color-offwhite);
@@ -54,8 +55,8 @@
 }
 
 .link a {
-  font-size: 1rem;
   font-family: var(--font-family-paragraph);
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;

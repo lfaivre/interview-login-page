@@ -1,6 +1,6 @@
 import React from 'react';
 
-import LoginForm from './components/LoginForm';
+import LoginContainer from './components/LoginContainer';
 import NavigationBar from './components/NavigationBar';
 
 import 'modern-css-reset';
@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App app-outer-container">
       <NavigationBar showAccountMenu={showAccountMenu} />
-      <LoginForm />
+      <LoginContainer />
     </div>
   );
 }

@@ -26,15 +26,18 @@ const LoginScreen = () => {
 
   return (
     <div className="login-form">
-      <p>Log In to Your Account</p>
       <form onSubmit={handleSubmission}>
-        <input type="text" value={username} onChange={handleSetUsername} placeholder="username" />
-        <input
-          type="password"
-          value={password}
-          onChange={handleSetPassword}
-          placeholder="password"
-        />
+        <div className="text-input-container">
+          <input type="text" value={username} onChange={handleSetUsername} placeholder="username" />
+        </div>
+        <div className="text-input-container">
+          <input
+            type="password"
+            value={password}
+            onChange={handleSetPassword}
+            placeholder="password"
+          />
+        </div>
         <input type="submit" value="Submit" />
       </form>
     </div>
