@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import { navigationLinks } from '../../data/navigation';
 import profileImage from '../../assets/profile.jpeg';
 
 const NavigationBar = () => {
@@ -13,18 +14,13 @@ const NavigationBar = () => {
         </div>
         <div className="right">
           <ul className="navigation-links">
-            <li className="link">
-              <a href="/">About</a>
-            </li>
-            <li className="link">
-              <a href="/">Services</a>
-            </li>
-            <li className="link">
-              <a href="/">Showcase</a>
-            </li>
-            <li className="link">
-              <a href="/">Account</a>
-            </li>
+            {navigationLinks.map((linkData) => {
+              return (
+                <li className="link" key={linkData.text}>
+                  <a href={linkData.href}>{linkData.text}</a>
+                </li>
+              );
+            })}
           </ul>
           <div className="account">
             <div className="picture" style={{ backgroundImage: `url(${profileImage})` }}></div>
