@@ -5,6 +5,11 @@
 :root {
   /* @info Define CSS Variables */
 
+  /* @info Colors */
+
+  --color-offwhite: #f3f2f1;
+  --color-offblack: #1e2223;
+
   /* @info Font Family */
 
   --font-family-default: 'Playfair Display', serif;
@@ -22,6 +27,6 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
 
-  background-color: #1e2223;
-  color: #ffffff;
+  background-color: var(--color-offblack);
+  color: var(--color-offwhite);
 }

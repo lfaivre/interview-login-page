@@ -1,7 +1,7 @@
 import React from 'react';
 
 import LoginForm from './components/LoginForm';
-import NavigationBar from './NavigationBar';
+import NavigationBar from './components/NavigationBar';
 
 import 'modern-css-reset';
 import './index.css';
