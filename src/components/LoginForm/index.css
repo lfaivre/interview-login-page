@@ -1,6 +1,5 @@
 .login-form {
   width: 100%;
-  /* background-color: green; */
 }
 
 form {
@@ -16,8 +15,6 @@ form {
   padding: 0.5rem;
   border: 0.125rem solid var(--color-mintgreen);
   margin-bottom: 1rem;
-
-  /* background-color: blue; */
 }
 
 input[type='text'],
@@ -27,28 +24,51 @@ input[type='password'] {
   padding: 0.5rem;
   border: none;
 
+  font-family: var(--font-family-paragraph);
+  font-size: 1.25rem;
+  font-weight: 400;
+
   color: var(--color-offwhite);
-  /* background-color: pink; */
   background: none;
+
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+input[type='text']::placeholder,
+input[type='password']::placeholder {
+  color: rgba(243, 242, 241, 0.5);
+}
+
+input[type='text']:focus::placeholder,
+input[type='password']:focus::placeholder {
+  color: rgba(30, 34, 35, 0.5);
 }
 
 input[type='text']:focus,
 input[type='password']:focus {
   outline: none;
+  color: #000000;
+  background-color: var(--color-mintgreen);
 }
 
 input[type='submit'] {
   width: 15%;
 
   padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 0.25rem;
+  border: 0.125rem solid var(--color-mintgreen);
 
-  background-color: var(--color-mintgreen);
+  font-family: var(--font-family-display);
+  font-size: 1.25rem;
 
+  color: var(--color-mintgreen);
+  background: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
   cursor: pointer;
 }
 
-input[type='submit']:focus {
+input[type='submit']:focus,
+input[type='submit']:hover {
   outline: none;
+  color: #000000;
+  background-color: var(--color-mintgreen);
 }

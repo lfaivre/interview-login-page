@@ -5,9 +5,15 @@ const LoginScreen = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
+  const resetInput = () => {
+    setUsername('');
+    setPassword('');
+  };
+
   const handleSubmission = (event) => {
     event.preventDefault();
     console.log(`Username: ${username}\nPassword: ${password}`);
+    resetInput();
   };
 
   const handleSetUsername = (event) => {
@@ -28,7 +34,12 @@ const LoginScreen = () => {
     <div className="login-form">
       <form onSubmit={handleSubmission}>
         <div className="text-input-container">
-          <input type="text" value={username} onChange={handleSetUsername} placeholder="username" />
+          <input
+            type="text"
+            value={username}
+            onChange={handleSetUsername}
+            placeholder="hello@company.com"
+          />
         </div>
         <div className="text-input-container">
           <input
