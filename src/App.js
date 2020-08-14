@@ -1,10 +1,16 @@
 import React from 'react';
-import './App.css';
+
 import LoginForm from './LoginForm';
+import NavigationBar from './NavigationBar';
+
+import 'modern-css-reset';
+import './index.css';
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App app-outer-container">
+      <NavigationBar />
       <LoginForm />
     </div>
   );

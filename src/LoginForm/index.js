@@ -24,7 +24,7 @@ const LoginScreen = () => {
   };
 
   return (
-    <div>
+    <div className="outer-container">
       <p>Log In to Your Account</p>
       <form onSubmit={handleSubmission}>
         <input type="text" value={username} onChange={handleSetUsername} placeholder="username" />
