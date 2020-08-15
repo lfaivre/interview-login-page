@@ -2,7 +2,7 @@ const readFromLocalStorage = (data) => {
   switch (data.type) {
     case 'USER_DATA':
       const user = window.localStorage.getItem('user');
-      console.log(`Read from local storage: ${user}, typeof user: ${typeof user}`);
+      console.log(`Read from local storage: ${user}`);
 
       return user ? JSON.parse(user) : user;
     default:
