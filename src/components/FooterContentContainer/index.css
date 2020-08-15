@@ -1,68 +1,54 @@
 .footer-content-container {
   width: 100%;
-  /* padding: 4rem 2rem; */
-  padding: 4rem;
+  padding: 2rem;
   background-color: var(--color-black);
   border-top: 0.0625rem solid rgba(243, 242, 241, 0.5);
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.top,
-.bottom {
+.first-quadrant,
+.second-quadrant,
+.third-quadrant,
+.fourth-quadrant {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.top {
-  margin-bottom: 2rem;
-}
-
-.top .left,
-.bottom .left {
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 }
 
-.top .left p,
-.bottom .left p {
-  text-align: left;
+.first-quadrant p,
+.third-quadrant p {
+  text-align: center;
 }
 
-.top .right,
-.bottom .right {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-end;
+.second-quadrant p,
+.fourth-quadrant p {
+  text-align: center;
 }
 
-.top .right p,
-.bottom .right p {
-  text-align: right;
-}
-
-.top .right .social-links {
+.second-quadrant .social-links {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.top .right .social-links a {
+.second-quadrant .social-links a {
   margin-left: 1rem;
-  text-align: right;
+  text-align: center;
   color: var(--color-offwhite);
   transition: color 0.15s ease-in-out;
 }
 
-.top .right .social-links a:first-of-type {
+.second-quadrant .social-links a:first-of-type {
   margin-left: 0;
 }
 
-.top .right .social-links a:hover,
-.top .right .social-links a:focus {
+.second-quadrant .social-links a:hover,
+.second-quadrant .social-links a:focus {
   outline: none;
   color: var(--color-mintgreen);
 }
@@ -124,4 +110,46 @@
 .footer-content-container .content .link:focus {
   outline: none;
   color: var(--color-mintgreen);
+}
+
+@media (min-width: 1024px) {
+  .footer-content-container {
+    padding: 4rem;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .first-quadrant,
+  .second-quadrant,
+  .third-quadrant,
+  .fourth-quadrant {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+
+  .first-quadrant,
+  .third-quadrant {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .second-quadrant,
+  .fourth-quadrant {
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .first-quadrant p,
+  .third-quadrant p {
+    text-align: left;
+  }
+
+  .second-quadrant p,
+  .fourth-quadrant p {
+    text-align: right;
+  }
+  .second-quadrant .social-links a {
+    text-align: right;
+  }
 }

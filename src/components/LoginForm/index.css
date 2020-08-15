@@ -1,9 +1,13 @@
 .login-form {
   width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 form {
-  width: 100%;
+  width: 80%;
 
   display: flex;
   flex-direction: column;
@@ -11,8 +15,14 @@ form {
   align-items: center;
 }
 
+@media (min-width: 1280px) {
+  .login-form form {
+    width: 50%;
+  }
+}
+
 label {
-  width: 50%;
+  width: 100%;
 
   padding: 0.5rem 0;
 
@@ -25,7 +35,7 @@ label {
 }
 
 .text-input-container {
-  width: 50%;
+  width: 100%;
 
   padding: 0.25rem;
   border: 0.125rem solid var(--color-mintgreen);
@@ -72,7 +82,7 @@ input[type='password']:focus {
 }
 
 input[type='submit'] {
-  width: 30%;
+  width: 60%;
 
   padding: 0.5rem 1rem;
   border: 0.125rem solid var(--color-mintgreen);
