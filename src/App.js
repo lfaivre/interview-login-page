@@ -18,9 +18,7 @@ function App() {
   const [username, setUsername] = useState(undefined);
 
   useEffect(() => {
-    console.log(`READ USER DATA`);
     const userData = getUserData();
-    console.log('RECEIVED USER DATA', userData);
 
     if (userData && userData.username) {
       setUsername(userData.username);
