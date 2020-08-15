@@ -1,4 +1,43 @@
+<p align="center">
+  <a href="http://localhost:3000/">
+    <img alt="Application Icon" src="./icon.png" width="60" />
+  </a>
+</p>
+<h1 align="center">Fuudie - Login Page for Interview</h1>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Selected Screenshots
+
+All screenshots are located in the `screenshots/` directory.
+
+**Desktop Screenshots**
+
+Desktop Splash and Login
+<br />
+![Desktop Splash and Login](https://github.com/lfaivre/interview-login-page/blob/master/screenshots/desktop_login.png?raw=true)
+
+Desktop Login Success
+<br />
+![Desktop Login Success](https://github.com/lfaivre/interview-login-page/blob/master/screenshots/desktop_login_success.png?raw=true)
+
+Desktop Footer
+<br />
+![Desktop Footer](https://github.com/lfaivre/interview-login-page/blob/master/screenshots/desktop_footer.png?raw=true)
+
+**Mobile Screenshots**
+
+Mobile Splash
+<br />
+![Mobile Splash](https://github.com/lfaivre/interview-login-page/blob/master/screenshots/mobile_splash.png?raw=true)
+
+Mobile Login
+<br />
+![Mobile Login](https://github.com/lfaivre/interview-login-page/blob/master/screenshots/mobile_login.png?raw=true)
+
+Mobile Login Success
+<br />
+![Mobile Login Success](https://github.com/lfaivre/interview-login-page/blob/master/screenshots/mobile_login_success.png?raw=true)
 
 ## Available Scripts
 
