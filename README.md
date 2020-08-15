@@ -13,31 +13,19 @@ All screenshots are located in the `screenshots/` directory.
 
 **Desktop Screenshots**
 
-Desktop Splash and Login
-<br />
-![Desktop Splash and Login](https://github.com/lfaivre/interview-login-page/blob/master/screenshots/desktop_login.png?raw=true)
-
-Desktop Login Success
-<br />
+![Desktop Splash](https://github.com/lfaivre/interview-login-page/blob/master/screenshots/desktop_splash.png?raw=true)
+![Desktop Login](https://github.com/lfaivre/interview-login-page/blob/master/screenshots/desktop_login.png?raw=true)
 ![Desktop Login Success](https://github.com/lfaivre/interview-login-page/blob/master/screenshots/desktop_login_success.png?raw=true)
-
-Desktop Footer
-<br />
 ![Desktop Footer](https://github.com/lfaivre/interview-login-page/blob/master/screenshots/desktop_footer.png?raw=true)
 
 **Mobile Screenshots**
 
-Mobile Splash
-<br />
-![Mobile Splash](https://github.com/lfaivre/interview-login-page/blob/master/screenshots/mobile_splash.png?raw=true)
-
-Mobile Login
-<br />
-![Mobile Login](https://github.com/lfaivre/interview-login-page/blob/master/screenshots/mobile_login.png?raw=true)
-
-Mobile Login Success
-<br />
-![Mobile Login Success](https://github.com/lfaivre/interview-login-page/blob/master/screenshots/mobile_login_success.png?raw=true)
+<p float="left">
+  <img alt="Mobile Splash" src="https://github.com/lfaivre/interview-login-page/blob/master/screenshots/mobile_splash.png?raw=true" width="22.5%" />
+  <img alt="Mobile Login" src="https://github.com/lfaivre/interview-login-page/blob/master/screenshots/mobile_login.png?raw=true" width="22.5%" />
+  <img alt="Mobile Login Success" src="https://github.com/lfaivre/interview-login-page/blob/master/screenshots/mobile_login_success.png?raw=true" width="22.5%" />
+  <img alt="Mobile Footer" src="https://github.com/lfaivre/interview-login-page/blob/master/screenshots/mobile_footer.png?raw=true" width="22.5%" />
+</p>
 
 ## Available Scripts
 
