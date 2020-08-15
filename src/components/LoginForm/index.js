@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { validateUserLoginInput } from '../../utils/validateLogin';
 import './index.css';
 
-const LoginScreen = () => {
+const LoginScreen = ({ setLoggedIn }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState(undefined);
@@ -21,11 +21,11 @@ const LoginScreen = () => {
     if (validationErrors.length !== 0) {
       console.log('Validation errors:', validationErrors);
       setErrorMessage('Invalid username or password.');
+      resetInput();
     } else {
       setErrorMessage(undefined);
+      setLoggedIn(true);
     }
-
-    resetInput();
   };
 
   const handleSetUsername = (event) => {

@@ -1,0 +1,54 @@
+.login-success-screen {
+  width: 100%;
+  min-height: calc(100vh - 6rem);
+
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-mintgreen);
+}
+
+@media (min-width: 1280px) {
+  .login-success-screen {
+    width: 50%;
+    padding: 2rem;
+    flex: 1;
+  }
+}
+
+.login-success-screen .message {
+  width: 85%;
+  font-family: var(--font-family-display);
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color-black);
+  margin-bottom: 2rem;
+}
+
+.dashboard-button {
+  padding: 0.5rem 1rem;
+  border: 0.125rem solid var(--color-black);
+  margin-bottom: 1rem;
+
+  font-family: var(--font-family-paragraph);
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--color-black);
+  background: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.dashboard-button:focus,
+.dashboard-button:hover {
+  outline: none;
+  color: var(--color-mintgreen);
+  background-color: var(--color-black);
+}
