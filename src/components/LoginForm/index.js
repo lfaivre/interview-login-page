@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { validateUserLoginInput } from '../../utils/validateLogin';
 import './index.css';
 
-const LoginScreen = ({ setLoggedIn }) => {
+const LoginScreen = ({ handleAuthentication }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState(undefined);
@@ -14,7 +14,6 @@ const LoginScreen = ({ setLoggedIn }) => {
 
   const handleSubmission = async (event) => {
     event.preventDefault();
-    console.log(`Username: ${username}\nPassword: ${password}`);
     const userLoginInput = { email: username, password };
     const validationErrors = await validateUserLoginInput(userLoginInput);
 
@@ -24,7 +23,9 @@ const LoginScreen = ({ setLoggedIn }) => {
       resetInput();
     } else {
       setErrorMessage(undefined);
-      setLoggedIn(true);
+
+      const userData = { username };
+      handleAuthentication(true, userData);
     }
   };
 

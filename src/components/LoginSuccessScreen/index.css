@@ -1,4 +1,6 @@
 .login-success-screen {
+  position: relative;
+
   width: 100%;
   min-height: calc(100vh - 6rem);
 
@@ -51,4 +53,46 @@
   outline: none;
   color: var(--color-mintgreen);
   background-color: var(--color-black);
+}
+
+.user-section {
+  position: absolute;
+  bottom: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.username,
+.logout {
+  color: var(--color-black);
+
+  font-family: var(--font-family-paragraph);
+  font-size: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.username {
+  font-weight: 700;
+}
+
+.logout {
+  padding: 0;
+  border: none;
+  margin: 0;
+
+  font-weight: 400;
+  transition: text-decoration 0.15s ease-in-out;
+  background: none;
+}
+
+.logout:hover,
+.logout:focus {
+  outline: none;
+  text-decoration: underline;
+  cursor: pointer;
 }
