@@ -8,7 +8,11 @@ import LoginMediaContainer from './components/LoginMediaContainer';
 import LoginFormContainer from './components/LoginFormContainer';
 import LoginSuccessScreen from './components/LoginSuccessScreen';
 
-import { getUserData, saveUserData, removeUserData } from './utils/modifyLocalStorage';
+import {
+  getUserDataFromLocalStorage,
+  saveUserDataToLocalStorage,
+  removeUserDataFromLocalStorage,
+} from './utils/modifyLocalStorage';
 
 import 'modern-css-reset';
 import './index.css';
@@ -18,7 +22,7 @@ function App() {
   const [username, setUsername] = useState(undefined);
 
   useEffect(() => {
-    const userData = getUserData();
+    const userData = getUserDataFromLocalStorage();
 
     if (userData && userData.username) {
       setUsername(userData.username);
@@ -39,14 +43,14 @@ function App() {
 
   const handleAuthentication = async (status, userData) => {
     if (status && userData && userData.username) {
-      const userDataSavedSuccessfully = saveUserData(userData);
+      const userDataSavedSuccessfully = saveUserDataToLocalStorage(userData);
 
       if (userDataSavedSuccessfully) {
         setUsername(userData.username);
         setLoggedIn(userDataSavedSuccessfully);
       }
     } else {
-      const userDataRemovedSuccessfully = removeUserData();
+      const userDataRemovedSuccessfully = removeUserDataFromLocalStorage();
 
       if (userDataRemovedSuccessfully) {
         setUsername(undefined);

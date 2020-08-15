@@ -40,19 +40,19 @@ const removeFromLocalStorage = (data) => {
   }
 };
 
-export const getUserData = () => {
+export const getUserDataFromLocalStorage = () => {
   const localStorageData = { type: 'USER_DATA' };
   const dataReadFromLocalStorage = readFromLocalStorage(localStorageData);
   return dataReadFromLocalStorage;
 };
 
-export const saveUserData = (userData) => {
+export const saveUserDataToLocalStorage = (userData) => {
   const localStorageData = { type: 'USER_DATA', payload: userData };
   const localStorageModificationStatus = saveToLocalStorage(localStorageData);
   return localStorageModificationStatus;
 };
 
-export const removeUserData = () => {
+export const removeUserDataFromLocalStorage = () => {
   const localStorageData = { type: 'USER_DATA' };
   const localStorageModificationStatus = removeFromLocalStorage(localStorageData);
   return localStorageModificationStatus;
