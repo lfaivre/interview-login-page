@@ -21,10 +21,24 @@ form {
   }
 }
 
+.error-message {
+  width: 100%;
+
+  margin: 0.5rem 0;
+
+  color: var(--color-offwhite);
+
+  font-family: var(--font-family-paragraph);
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-align: center;
+  /* text-transform: uppercase; */
+}
+
 label {
   width: 100%;
 
-  padding: 0.5rem 0;
+  margin: 0.5rem 0;
 
   color: var(--color-mintgreen);
 

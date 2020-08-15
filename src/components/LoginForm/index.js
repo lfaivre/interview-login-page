@@ -1,38 +1,47 @@
 import React, { useState } from 'react';
+import { validateUserLoginInput } from '../../utils/validateLogin';
 import './index.css';
 
 const LoginScreen = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState(undefined);
 
   const resetInput = () => {
     setUsername('');
     setPassword('');
   };
 
-  const handleSubmission = (event) => {
+  const handleSubmission = async (event) => {
     event.preventDefault();
     console.log(`Username: ${username}\nPassword: ${password}`);
+    const userLoginInput = { email: username, password };
+    const validationErrors = await validateUserLoginInput(userLoginInput);
+
+    if (validationErrors.length !== 0) {
+      console.log('Validation errors:', validationErrors);
+      setErrorMessage('Invalid username or password.');
+    } else {
+      setErrorMessage(undefined);
+    }
+
     resetInput();
   };
 
   const handleSetUsername = (event) => {
     const enteredData = event.target.value;
-
-    // @todo perform input validation
     setUsername(enteredData);
   };
 
   const handleSetPassword = (event) => {
     const enteredData = event.target.value;
-
-    // @todo perform input validation
     setPassword(enteredData);
   };
 
   return (
     <div className="login-form">
       <form onSubmit={handleSubmission}>
+        <p className="error-message">{errorMessage ? errorMessage : ''}</p>
         <label htmlFor="username">Username</label>
         <div className="text-input-container">
           <input type="text" id="username" value={username} onChange={handleSetUsername} />
