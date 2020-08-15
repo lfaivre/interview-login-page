@@ -5,7 +5,12 @@
 </p>
 <h1 align="center">Fuudie - Login Page for Interview</h1>
 
+**Note\:**
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Deployed on [Netlify](https://interview-login-page.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/88c80e01-2fb4-48dc-b6bf-bc2d95412484/deploy-status)](https://app.netlify.com/sites/interview-login-page/deploys)
 
 ## Starting Application
 
