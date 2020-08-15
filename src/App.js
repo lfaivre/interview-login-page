@@ -17,12 +17,14 @@ function App() {
 
   return (
     <div className="App">
-      <NavigationBar showAccountMenu={showAccountMenu} />
-      <PageContentContainer>
-        <LoginMediaContainer />
-        <LoginFormContainer />
-      </PageContentContainer>
-      <FooterContentContainer />
+      <div className="max-width-wrapper">
+        <NavigationBar showAccountMenu={showAccountMenu} />
+        <PageContentContainer>
+          <LoginMediaContainer />
+          <LoginFormContainer />
+        </PageContentContainer>
+        <FooterContentContainer />
+      </div>
     </div>
   );
 }

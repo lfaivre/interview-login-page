@@ -22,6 +22,9 @@
   --font-family-default: 'Playfair Display', serif;
   --font-family-display: 'Playfair Display', serif;
   --font-family-paragraph: 'Roboto', sans-serif;
+
+  /* @info Container Sizing */
+  --max-container-width: 1600px;
 }
 
 html {
@@ -51,8 +54,18 @@ body {
 /* @info App */
 
 .App {
-  position: relative;
   width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.App .max-width-wrapper {
+  position: relative;
+
+  width: 100%;
+  max-width: var(--max-container-width);
   height: 100%;
 
   display: flex;

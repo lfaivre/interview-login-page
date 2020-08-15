@@ -8,11 +8,17 @@
 
   padding: 1rem 2rem;
   border-bottom: 0.0625rem solid rgba(243, 242, 241, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: var(--color-black);
 }
 
 .inner-container {
   width: 100%;
+  max-width: var(--max-container-width);
   height: 100%;
 
   display: flex;

@@ -22,6 +22,7 @@ form {
 }
 
 .error-message {
+  height: 1.25rem;
   width: 100%;
 
   margin: 0.5rem 0;
@@ -32,7 +33,6 @@ form {
   font-size: 0.75rem;
   font-weight: 400;
   text-align: center;
-  /* text-transform: uppercase; */
 }
 
 label {
