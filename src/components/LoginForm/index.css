@@ -27,7 +27,7 @@ label {
 .text-input-container {
   width: 50%;
 
-  padding: 0.5rem;
+  padding: 0.25rem;
   border: 0.125rem solid var(--color-mintgreen);
   margin-bottom: 1rem;
 }

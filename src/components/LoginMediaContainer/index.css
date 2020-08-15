@@ -13,15 +13,19 @@
   background-color: var(--color-mintgreen);
 }
 
-.art {
+.login-media-container .art {
   width: 80%;
 }
 
-.description {
+.login-media-container .description {
   width: 85%;
   font-family: var(--font-family-display);
   font-size: 2rem;
   text-align: center;
   color: var(--color-black);
   margin-bottom: 6rem;
+}
+
+.login-media-container .underline {
+  text-decoration: underline;
 }
